@@ -1,15 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CalculatorwIMC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="23.5" alignment="left" id="HXw-x8-tUR">
+                            <items>
+                                <label width="61.5" alignment="left" text="Weight" id="llw-y4-mgh"/>
+                                <label alignment="left" id="6x1-ga-qLv"/>
+                            </items>
+                        </group>
+                        <slider width="1" height="31.5" alignment="left" value="1" minimum="1" maximum="250" steps="249" id="Tdb-yo-3oY">
+                            <connections>
+                                <action selector="weightSlider:" destination="AgC-eL-Hgc" id="ska-GE-Ohd"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="c4W-07-If0">
+                            <items>
+                                <label width="61.5" alignment="left" text="Height" id="1Pk-Bk-nTZ"/>
+                                <label alignment="left" id="iH8-er-Wf0"/>
+                            </items>
+                        </group>
+                        <slider width="1" height="28" alignment="left" value="1" minimum="1" maximum="230" steps="229" id="d8g-Yc-tsu">
+                            <connections>
+                                <action selector="heightSlider:" destination="AgC-eL-Hgc" id="acR-P0-1ao"/>
+                            </connections>
+                        </slider>
+                        <button width="1" height="29.5" alignment="left" title="Calculate" id="DRW-jV-oEQ">
+                            <connections>
+                                <action selector="calculateButton" destination="AgC-eL-Hgc" id="vbA-g5-TnC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="heightLabel" destination="iH8-er-Wf0" id="sec-2m-puh"/>
+                        <outlet property="weightLabel" destination="6x1-ga-qLv" id="9Le-BM-xgI"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="305" y="370"/>
+        </scene>
+        <!--ResultsController-->
+        <scene sceneID="Blz-4l-PJU">
+            <objects>
+                <controller identifier="ResultsController" id="1gB-Am-nAV" customClass="ResultsWKController" customModule="CalculatorwIMC_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Result" id="VjZ-Yb-RGX"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="93U-CO-wfX">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <separator alignment="left" id="Pct-R8-J3H"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="1pb-2r-hTN"/>
+                    </items>
+                    <connections>
+                        <outlet property="detailLabel" destination="1pb-2r-hTN" id="Mfq-eR-IeE"/>
+                        <outlet property="resultLabel" destination="93U-CO-wfX" id="dBh-o2-3aO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="581" y="363"/>
         </scene>
     </scenes>
 </document>

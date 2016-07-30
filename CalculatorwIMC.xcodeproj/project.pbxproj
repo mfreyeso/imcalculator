@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACE56E3D1D4B07B30077C279 /* ResultsWKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE56E3C1D4B07B30077C279 /* ResultsWKController.swift */; };
 		ACF1F8C51D4AC451001DEAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1F8C41D4AC451001DEAD4 /* AppDelegate.swift */; };
 		ACF1F8C71D4AC451001DEAD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1F8C61D4AC451001DEAD4 /* ViewController.swift */; };
 		ACF1F8CA1D4AC451001DEAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF1F8C81D4AC451001DEAD4 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		ACF1F8E81D4AC451001DEAD4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1F8E71D4AC451001DEAD4 /* InterfaceController.swift */; };
 		ACF1F8EA1D4AC451001DEAD4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1F8E91D4AC451001DEAD4 /* ExtensionDelegate.swift */; };
 		ACF1F8EC1D4AC451001DEAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF1F8EB1D4AC451001DEAD4 /* Assets.xcassets */; };
+		ACF1F8FC1D4B01B5001DEAD4 /* ResultIMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1F8FB1D4B01B5001DEAD4 /* ResultIMC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ACE56E3C1D4B07B30077C279 /* ResultsWKController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsWKController.swift; sourceTree = "<group>"; };
 		ACF1F8C11D4AC451001DEAD4 /* CalculatorwIMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorwIMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF1F8C41D4AC451001DEAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF1F8C61D4AC451001DEAD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		ACF1F8E91D4AC451001DEAD4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		ACF1F8EB1D4AC451001DEAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF1F8ED1D4AC451001DEAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF1F8FB1D4B01B5001DEAD4 /* ResultIMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultIMC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				ACF1F8E91D4AC451001DEAD4 /* ExtensionDelegate.swift */,
 				ACF1F8EB1D4AC451001DEAD4 /* Assets.xcassets */,
 				ACF1F8ED1D4AC451001DEAD4 /* Info.plist */,
+				ACF1F8FB1D4B01B5001DEAD4 /* ResultIMC.swift */,
+				ACE56E3C1D4B07B30077C279 /* ResultsWKController.swift */,
 			);
 			path = "CalculatorwIMC WatchKit Extension";
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE56E3D1D4B07B30077C279 /* ResultsWKController.swift in Sources */,
+				ACF1F8FC1D4B01B5001DEAD4 /* ResultIMC.swift in Sources */,
 				ACF1F8EA1D4AC451001DEAD4 /* ExtensionDelegate.swift in Sources */,
 				ACF1F8E81D4AC451001DEAD4 /* InterfaceController.swift in Sources */,
 			);
@@ -527,6 +535,7 @@
 				ACF1F8F21D4AC451001DEAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF1F8F41D4AC451001DEAD4 /* Build configuration list for PBXNativeTarget "CalculatorwIMC WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +544,7 @@
 				ACF1F8F61D4AC451001DEAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF1F8F81D4AC451001DEAD4 /* Build configuration list for PBXNativeTarget "CalculatorwIMC" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +553,7 @@
 				ACF1F8FA1D4AC451001DEAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
